@@ -1,0 +1,1 @@
+the all code pushes are mine ichetann username the username narak is comming because he has configured it in this specific system. even if i do my config then all the next future commits from this system have my name that the reason i am not doing. so please conside my username and commit
