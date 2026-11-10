@@ -10,7 +10,15 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-app.use(cors());
+const corsOptions = {
+  origin: [
+    'https://agaetis-task-git-main-chetanchaudhari617-5581s-projects.vercel.app',
+    'http://localhost:5173' 
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/employees', employeeRoutes);
